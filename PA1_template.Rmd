@@ -6,11 +6,9 @@ output:
 ---
 
 ##Loading and preprocessing the data
-```{r}
+```{r message=FALSE}
 library(dplyr)
 library(ggplot2)
-wd <- "C:\\Users\\Jeff Test\\Documents\\R Data\\Reproducible Research\\Project1"
-setwd(wd)
 
 activityData <- read.csv("activity.csv")
 isvalidData <- complete.cases(activityData)

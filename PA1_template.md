@@ -4,25 +4,7 @@
 
 ```r
 library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-## 
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-## 
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 library(ggplot2)
-wd <- "C:\\Users\\Jeff Test\\Documents\\R Data\\Reproducible Research\\Project1"
-setwd(wd)
 
 activityData <- read.csv("activity.csv")
 isvalidData <- complete.cases(activityData)
